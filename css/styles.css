@@ -70,6 +70,22 @@ body {
   color: #2196f3;
 }
 
+.contacts-link-footer {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contacts-link-footer:hover,
+.contacts-link-footer:focus {
+  color: #2196f3;
+}
+
 .page-title {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -88,7 +104,6 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
-  /* identical to box height, or 187% */
   display: flex;
   align-items: center;
   text-align: center;
@@ -126,7 +141,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -149,4 +163,8 @@ body {
 .p-title-team {
   font-size: 16px;
   line-height: 1.188;
+}
+
+.footer-bg {
+    background: #2F303A;
 }
