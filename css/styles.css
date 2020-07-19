@@ -4,8 +4,9 @@
   --background-team-box:  #f5f4fa; /* колір фону "Наша команда" */
   --background-body: #ffffff; /* колір фону сторінки */
   --white-color: #ffffff; /* світлі надписи текстом */
-  --black-color: #000000; /* чорний текст */
-  --gray-color: #212121; /* сірий текст */
+  --black-color: #212121; /* чорний текст */
+  --gray-color: #757575; /* сірий текст */
+  --footer-link-color: rgba(255, 255, 255, 0.6) /* прозорий колір лінків футера */
 
 }
 
@@ -16,7 +17,7 @@ body {
   font-size: 14px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--gray-color);
   background: var(--background-body);
 }
 
@@ -36,7 +37,7 @@ body {
 }
 
 .logo-span-white {
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .unmark {
@@ -47,7 +48,7 @@ body {
   font-weight: 500;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--black-color);
   text-decoration: none;
 }
 
@@ -61,7 +62,7 @@ body {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--gray-color);
   text-decoration: none;
 }
 
@@ -72,7 +73,7 @@ body {
 
 .contacts-link-footer {
   line-height: 1,714;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-color);
   text-decoration: none;
 }
 
@@ -83,7 +84,7 @@ body {
 
 .address-link {
   line-height: 1.714;
-   color: #FFFFFF;
+  color: var(--white-color);
    text-decoration: none;
 }
 
@@ -99,7 +100,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF; 
+  color: var(--white-color);
   background: var(--accent-color); /* тільки для відладки. видалити */
 }
 
@@ -111,8 +112,8 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
+  color: var(--white-color);
+  background: var(--accent-color);
   border-radius: 4px;
 }
 
@@ -121,14 +122,22 @@ body {
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  color: #212121;
+  color: var(--black-color);
 }
 
 .h3-title-features {
   font-weight: bold;
   line-height: 1.143;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--black-color);
+}
+
+.h3-title-working {
+  font-weight: bold;
+  line-height: 1.143;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 
 .h3-title-team {
@@ -136,14 +145,14 @@ body {
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
-  color: #212121;
+  color: var(--black-color);
 }
 
 .h3-footer {
   font-weight: bold;
   line-height: 1.143;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .team-box {
