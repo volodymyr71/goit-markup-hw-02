@@ -1,17 +1,23 @@
-/* font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
+:root {
+  --accent-color:  #2196f3; /* акцентуючий колір для hover / logo */
+  --background-footer:  #2F303A; /* колір фону в футері */
+  --background-team-box:  #f5f4fa; /* колір фону "Наша команда" */
+  --background-body: #ffffff; /* колір фону сторінки */
+  --white-color: #ffffff; /* світлі надписи текстом */
+  --black-color: #000000; /* чорний текст */
+  --gray-color: #212121; /* сірий текст */
+
+}
 
 body {
   font-family: "Roboto", sans-serif;
-  /* font-style: normal;
-    font-weight: normal; */
+  font-style: normal;
+  font-weight: normal; 
   font-size: 14px;
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: #757575;
-}
-
-.page-header {
+  background: var(--background-body);
 }
 
 .logo {
@@ -21,7 +27,7 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -33,17 +39,12 @@ body {
   color: #ffffff;
 }
 
-.navigation {
-}
-
 .unmark {
   list-style: none;
 }
 
 .menu-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
@@ -52,11 +53,10 @@ body {
 
 .menu-link:hover,
 .menu-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contacts-link {
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -67,40 +67,43 @@ body {
 
 .contacts-link:hover,
 .contacts-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contacts-link-footer {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  line-height: 1,714;
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
 .contacts-link-footer:hover,
 .contacts-link-footer:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.address-link {
+  line-height: 1.714;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
 }
 
 .page-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /*color: #FFFFFF; */
+  color: #FFFFFF; 
+  background: var(--accent-color); /* тільки для відладки. видалити */
 }
 
 .button-main {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.875;
@@ -114,57 +117,45 @@ body {
 }
 
 .h2-title {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.167;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
 .h3-title-features {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.143;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 
 .h3-title-team {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
 .h3-footer {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.143;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .team-box {
-  background: #f5f4fa;
+  background: var(--background-team-box)
 }
+
 .p-title-team {
   font-size: 16px;
   line-height: 1.188;
 }
 
+
 .footer-bg {
-    background: #2F303A;
+    background: var(--background-footer)
 }
