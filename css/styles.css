@@ -7,7 +7,6 @@
   --black-color: #212121; /* чорний текст */
   --gray-color: #757575; /* сірий текст */
   --footer-link-color: rgba(255, 255, 255, 0.6) /* прозорий колір лінків футера */
-
 }
 
 body {
@@ -164,7 +163,35 @@ body {
   line-height: 1.188;
 }
 
-
 .footer-bg {
     background: var(--background-footer)
+}
+
+.h2-portfolio {
+font-weight: bold;
+font-size: 18px;
+line-height: 2x;
+letter-spacing: 0.06em;
+color: var(--black-color);
+}
+
+.p-portfolio-short {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--gray-color);
+}
+
+.p-portfolio-long {
+  font-size: 16px;
+  line-height: 1.556;
+  color: var(--white-color);  
+}
+
+.portfolio-link {
+  text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+  color: var(--accent-color);
 }
